@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>  <!--<html lang="hr">-->
+
+<head>
+	<meta charset="UTF-8">  
+    <title> HTML vodič</title>  
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="HTML5 lookup">
+	
+	<style>
+    /* Lista kao navigacija */
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 28px;
+    }
+	</style>
+</head>
+
+<body>
+	<h1>Naslov &lt;h1&gt;</h1>
+	<p>Odlomak1 &lt;p&gt</p> 
+	<br>  <!--break-->
+	<p>Odlomak2 poslije break &lt;p&gt</p>
+	<p>  Posjeti <a href="https://google.com">Google</a>.</p>
+	
+	<h2>VEZE</h2> 
+	<a href="http://vvg.hr">VVG.HR - apsolutna</a>&nbsp;
+	<a href="o_nama.html">O nama - relativna </a>&nbsp;
+	<a href="http://vvg.hr" target="_blank">Otvaranje u novom tabu</a>&nbsp;
+	<a href="mailto:mirko@mirkovic.hr"> MAIL TO:</a>&nbsp;
+	<br>
+	<a href="mailto:mirko@mirkovic.hr?cc=marko@markovic.hr&subject=Naslov poruke&body=Tekst poruke"></a>
+	<br>
+	
+	<h2>SLIKE<h2>
+	<img src="img/ZXSpectrum48k _100.jpg" alt="txt kad nema slike" title="prikazuje hover txt">
+	<figure> <!--služi za grupiranje slike i njezina opisa u jednu cjelinu.-->
+		<img src="img/zx-PHONE.jpg" alt="ZX Spectrum 48k">
+		<figcaption>Zx Spec-text ispod slike</figcaption>
+		<figcaption>ili ovako
+		<a href="http://www.flickr.com/photos/rclark/"> Richard </a>
+		</figcaption>
+    </figure>
+	
+	
+	<h3>Optimizacija slike<h3>
+	<img src="img/ZXSpectrum48k.jpg" width="200" height="300" align="right">
+	<h3>Atributi slike</h3>
+	<p> align="left | right | center" - valign="top | middle | bottom"</p>
+	
+	
+	<h3>TABLICE</h3>
+	<table>
+	
+	 <h1>Lista studenata</h1>
+    <table border="1" width="500" bgcolor="lightblue"> 
+	<!--i <tr></tr> - jedan red , <tr></tr>, unutar moze biti th ili td , broj kolumni-->
+        <tr>
+            <th>Heading Ime</th>
+            <th rowspan="2">Heading rowspan</th>
+			<th colspan="2">colspan ime i prezime</th> <!--zauzima prostor 2 kolone-->
+        </tr>
+		<tr>
+            <td>Heading Ime</td>
+            <td>Heading Prezime</td>
+			<td>Ime i prezime</td>
+        </tr>
+    </table>
+	
+	<h3> UREĐENA LISTA </h3>
+	<ol>
+		<li> item1</li>
+		<li> item2</li>
+	</ol>
+	
+	<h3> neUREĐENA LISTA </h3>
+	<ul>
+		<li> item1</li>
+		<li> item2</li>
+	</ul>
+	
+	<h3>Definicijska lista</h3>
+    <dl>
+        <dt>naslov</dt>
+        <dd>uvuceno</dd>
+        <dt>naslov</dt>
+        <dd>uvuceno</dd>
+    </dl>
+	
+	 <h3>Ugnježđena lista</h3>
+    <ul>
+        <li>item1</li>
+        <li>Čaj
+            <ul>
+                <li>Crni čaj</li>
+                <li>Zeleni čaj</li>
+            </ul>
+        </li>
+        <li>Sok</li>
+    </ul>
+	 <h3>Ugnježđena lista - navigacija</h3>
+	<nav>
+    <ul class="nav navbar-nav">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown"><a href="#">Dropdown</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Link</a></li>
+    </ul>
+	</nav>
+    <h3>Lista kao navigacija</h3>
+	<nav>
+		<ul>
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="gal.html">Galerija</a></li>
+        <li><a href="info.html">Kontakt</a></li>
+		</ul>
+	</nav>
+	
+	<h3> Entiteti <a href="https://htmlentities.io/articles/html-entities-list-reference"> popis entiteta </a>
+	<!--
+=============================================
+             HTML ENTITETI
+=============================================
+
+ZNAK     ENTITET       NUMERIČKI     OPIS
+---------------------------------------------
+Razmak   &nbsp;        &#160;         Dodatni razmak
+<        &lt;          &#60;          Manje od
+>        &gt;          &#62;          Veće od
+&        &amp;         &#38;          Ampersand
+"        &quot;        &#34;          Navodnici
+'        &apos;        &#39;          Apostrof
+
+OSTALI KORISNI ENTITETI
+---------------------------------------------
+©        &copy;        &#169;         Copyright
+®        &reg;         &#174;         Registrirani znak
+€        &euro;        &#8364;        Euro
+£        &pound;       &#163;         Funta
+¥        &yen;         &#165;         Jen
+§        &sect;        &#167;         Paragraf
+×        &times;       &#215;         Množenje
+÷        &divide;      &#247;         Dijeljenje
+
+=============================================
+PRIMJER:
+<p>5 &lt; 10</p>
+
+REZULTAT:
+5 < 10
+=============================================
+-->
+
+    <h4>dodatni razmak izmedju rijeci</h4>
+    <p>text &nbsp; text &times; 10 &lt; 12</p>
+
+
+	<footer>&copy;  <a href="https://github.com/di-git-one" target="_blank">Github</a> &amp; 
+	TEST. All rights reserved.
+	</footer>
+	
+	<h3>DIV</h3>
+	<div style="color:blue; background-color:lightgray;">
+    <p>Prvi <b style="color:red">sit</b> odlomak</p>
+    <p>Drugi odlomak</p>
+	</div>
+
+	<p>Treći odlomak</p> 
+	
+	
+	<h3> VIDEO ELEMENTI</h3>
+	<video width="320" height="240" controls autoplay muted >
+    <source src="videos\test-video.mp4" type="video/mp4"> Your browser does not support the video tag.
+	</video>
+	<!--drugi red - prazan red - br  -->
+	
+	<video width="320" height="240" controls muted poster="ICONS\pc-icon-21.jpg">
+    <source src="videos\test-video.mp4" type="video/mp4">
+	</video>
+	
+
+	<h3>2. YouTube video - iframe</h3>
+
+    <iframe width="560" height="315"		
+        src="https://www.youtube.com/embed/jfKfPfyJRdk"
+        title="YouTube video"
+        allowfullscreen>
+    </iframe>
+	
+	
+	<h3> AUDIO ELEMENT</h3>
+	<audio controls autoplay muted>
+    <source src="audio.ogg" type="audio/ogg">
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+	</audio>
+
+
+
+</body>
+
+
+
+
+
