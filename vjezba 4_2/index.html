@@ -4,47 +4,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vježba 4_2 - HTML forma</title>
+    <title>Vježba 12 - 4_2 - HTML forma</title>
 </head>
 
 <body>
 
     <h2>Contact Form</h2>
-
     <form action="#" method="post">
-
-        <!-- Ime -->
         <label for="fname">First Name *</label><br>
-        <input type="text"
-               id="fname"
-               name="firstname"
-               placeholder="Your first name..."
-               required>
+        <input type="text" id="fname" name="firstname"
+               style="width:200px"
+               placeholder="Your first name..." required>
         <br><br>
 
-        <!-- Prezime -->
         <label for="lname">Last Name *</label><br>
-        <input type="text"
-               id="lname"
-               name="lastname"
-               placeholder="Your last name..."
-               required>
+        <input type="text" id="lname" name="lastname"
+               style="width:200px"
+               placeholder="Your last name..." required>
         <br><br>
 
-        <!-- E-mail -->
         <label for="email">Your E-mail *</label><br>
-        <input type="email"
-               id="email"
-               name="email"
-               placeholder="Your e-mail..."
-               required>
+        <input type="email" id="email" name="email"
+               style="width:200px"
+               placeholder="Your e-mail..." required>
         <br><br>
 
-        <!-- Država -->
         <label for="country">Country</label><br>
-        <select id="country" name="country">
-            <option value="">Select country...</option>
+        <select id="country" name="country" style="width:200px">
+            <option value="">Please select</option>
             <option value="BE">Belgium</option>
             <option value="HR" selected>Croatia</option>
             <option value="LU">Luxembourg</option>
@@ -52,17 +39,13 @@
         </select>
         <br><br>
 
-        <!-- Poruka -->
         <label for="message">Message</label><br>
-        <textarea
-            id="message"
-            name="message"
-            rows="3"
-            cols="25"
-            placeholder="Write something..."></textarea>
+        <textarea id="message" name="message"
+                  style="width:200px"
+                  rows="3"
+                  placeholder="Write something..."></textarea>
         <br><br>
 
-        <!-- Gumbi -->
         <input type="submit" value="Send">
         <input type="reset" value="Reset">
 
