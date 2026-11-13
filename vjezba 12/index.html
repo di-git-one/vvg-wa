@@ -1,25 +1,117 @@
-<form>
-    <label>First Name *</label><br>
-    <input type="text" placeholder="Your first name..." required><br><br>
 
-    <label>Last Name *</label><br>
-    <input type="text" placeholder="Your last name..." required><br><br>
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja prva stranica – Header</title>
 
-    <label>Your E-mail *</label><br>
-    <input type="email" placeholder="Your e-mail..." required><br><br>
+    <style>
+        /* Reset margina i paddinga */
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-    <label for="country">Country</label>
-<select id="country" name="country">
-    <option value="">Please select</option>
-    <option value="BE">Belgium</option>
-    <option value="HR" selected>Croatia</option>
-    <option value="LU">Luxembourg</option>
-    <option value="HU">Hungary</option>
-</select>
+        /* Osnovni stil stranice */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
 
-    <label>Message</label><br>
-    <textarea rows="3" cols="25" placeholder="Write something..."></textarea><br><br>
+        /* Zaglavlje */
+        header {
+            background-color: white;
+            border: 1px solid #cccccc;
+            margin: 20px;
+            padding: 10px;
+        }
 
-    <input type="submit" value="Send">
-    <input type="reset" value="Reset">
-</form>
+        /* Banner slika */
+        .banner img {
+            width: 100%;
+            display: block;
+            border-bottom: 3px solid #ffcc00;
+        }
+
+        /* Navigacija */
+        nav {
+            background-color: #333333;
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        /* Lista navigacije */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Stavke navigacije */
+        li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        /* Poveznice */
+        a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 12px;
+            font-size: 14px;
+        }
+
+        /* Glavni sadržaj */
+        main {
+            background-color: white;
+            border: 1px solid #cccccc;
+            margin: 0 20px 20px 20px;
+            padding: 10px;
+        }
+
+        main p {
+            line-height: 1.5;
+        }
+
+        /* Podnožje */
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: #555555;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="banner">
+            <img
+                src="https://raw.githubusercontent.com/asimec1/CSS_1/main/vjezba_12/lego_banner.jpg"
+                alt="LEGO banner">
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Početna</a></li>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Usluge</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Ovdje će ići ostatak sadržaja stranice.</p>
+    </main>
+
+    <footer>
+        &copy; Damir Ožegović
+    </footer>
+
+</body>
+</html>
